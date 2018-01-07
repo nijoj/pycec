@@ -6,11 +6,8 @@
 
 body {
  margin: 0;
-   background-image:url("../svg/grey-prism.svg");
-   background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  color: white;
+ color: white;
+ /*scroll-behavior: smooth;*/
 }
 nav {
   /*background-color: black;*/
@@ -250,29 +247,58 @@ h1{
     background-position: center bottom;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+#speakers p{
+  font-size: 14px;
+    font-family: 'Roboto';
+    color: #848484;
+    margin: 0;
+    text-align: center;
+    width: 90%;
+}
 #speakers h2{
 
   color:black;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-  padding: 16px;
+  font-family: 'Montserrat', sans-serif;
+ font-size: 36px;
+    color: #222222;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    margin: 25px 0;
+    width:100%;
+    text-align: center;
 }
 .speaker{
   color: black;
   text-align: center;
   padding: 32px;
+
+}
+.speaker p{
+      font-size: 14px;
+    font-family: 'Roboto';
+    color: #848484;
+    margin: 0;
+    margin-top: 5px;
+}
+.speaker h3{
+      font-size: 22px;
+    margin: 0;
+    font-family: 'Montserrat';
+    color: #2f323c;
+    text-transform: uppercase;
+    margin-top: 15px;
 }
 .speaker img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  box-shadow: 0px 0px 0px 4px #0c68ff,0px 0px 4px 9px #8eb9ff;
+  width: 250px;
+  height: 250px;
+  
 }
 
 .speaker h3{
