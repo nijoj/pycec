@@ -10,12 +10,21 @@ body {
  /*scroll-behavior: smooth;*/
 }
 nav {
-  /*background-color: black;*/
+  
   position: fixed;
   min-width: 100%;
   display: flex;
   height: 70px;
   justify-content: space-between;
+  z-index: 2;
+}
+
+.nav-transparent{
+  background-color: #8793e840;
+}
+
+.nav-colored{
+  background: black;
 }
 
 .logo {
@@ -59,7 +68,6 @@ nav a{
   display: flex; 
   justify-content: space-around;
   align-items: center;
-  z-index: -1;
   height: 400px;
   background-image:url("../images/back.jpg");
   background-size: cover;
@@ -118,6 +126,7 @@ h1{
   top:0;
   right: -36%;
   transform: skew(-20deg);
+  z-index: -1;
   
 }
 
@@ -129,7 +138,7 @@ h1{
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 700;
-  z-index: 1;
+  
   /*box-shadow: -1px 0px 82px 78px rgba(0,0,0,0.6);*/
 }
 /*about start*/
@@ -350,6 +359,13 @@ h1{
   width: 100%;
   padding: 16px;
   color: black
+    font-size: 36px;
+    font-family: 'Montserrat';
+    color: #222222;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    margin: 50px 0;
 }
 
 .sponsor{
