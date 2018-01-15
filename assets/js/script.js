@@ -1,4 +1,6 @@
 var myNav = document.querySelector("nav");
+var fabtn=document.querySelector(".fabtn");
+var fablink=document.querySelectorAll(".fablink");
 // window.onscroll = function () { 
 //     "use strict";
 //     if (document.scrollingElement.scrollTop >= document.getElementById("main").clientHeight ) {
@@ -41,5 +43,16 @@ window.addEventListener('scroll', function(e) {
     ticking = true;
 
   }
+
+});
   
+for(i=0;i<fablink.length-1;i++){
+		fablink[i].classList.add("fablink-inactive");
+	}
+
+fabtn.addEventListener("click",function(){
+	for(i=0;i<fablink.length-1;i++){
+		fablink[i].classList.toggle("fablink-active");
+	}
+
 });
